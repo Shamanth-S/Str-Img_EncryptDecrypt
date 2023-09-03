@@ -21,7 +21,7 @@ public class Encryption_Decryption {
     static String encoded;
 
     public static void main(String[] args) throws Exception {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         Scanner in = new Scanner(System.in);
         int choice;
 
@@ -42,7 +42,7 @@ public class Encryption_Decryption {
                 case 2: Decrypt_String();
                         break;
                         case 3: System.out.print("\tEnter the path of the image: ");
-                                String path = reader.readLine();
+                                String path = br.readLine();
                                 BufferedImage image = ImageIO.read(new File(path));
                                 Encrypt_Img(image);
                                 break;                    
